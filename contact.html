@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+	<title>Bruciano le calorie</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<!--theme-style-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+	<!--//theme-style-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<!--fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700' rel='stylesheet' type='text/css'>
+
+	<!--//fonts-->
+	<script src="js/modernizr.custom.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+</head>
+<body>
+<!--header-->
+<div class="header" style="flex: 0 0 auto;">
+	<div class="top-header">
+		<div class="container">
+			<div class="top-head">
+				<ul class="header-in">
+					<li><a href="terms.html">Termini e condizioni</a></li>
+					<li><a href="policy.html">Politica sulla privacy</a></li>
+				</ul>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!---->
+
+	<div class="header-top">
+		<div class="container">
+			<div class="head-top">
+				<div class="logo">
+
+					<h1><a href="index.html"> Facile fitness</a></h1>
+
+				</div>
+				<div class="top-nav">
+
+
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Articoli</a></li>
+						<li><a href="contact.html">Contatti</a></li>
+						<li><a href="policy.html">Politica sulla privacy</a></li>
+						<li><a href="terms.html">Termini e condizioni</a></li>
+						<div class="clearfix"></div>
+					</ul>
+
+					<!--script-->
+					<script>
+						$("span.menu").click(function () {
+							$(".top-nav ul").slideToggle(500, function () {
+							});
+						});
+					</script>
+
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div style>
+<!--banner-->
+
+<!--content-->
+<div class="contact" style="flex: 1 0 auto;">
+
+    <div class="container">
+        <h2>Contatti</h2>
+        <div class="contact-form">
+
+            <div class="col-md-8 contact-grid">
+                <form action="thanks.html" method="post">
+                    <input type="text" placeholder="Il nome">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Il numero di telefono">
+
+                    <textarea cols="77" rows="6"></textarea>
+                    <div class="send">
+						<input type="checkbox" name="terms" value="check" required=""/>
+						<a href="policy.html" target="_blank">
+							Ho letto e accetto i termini di questo accordo
+						</a>
+
+						<input type="submit" value="Inviare">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 contact-in">
+
+                <div class="address-more">
+
+
+                    <p>Borgo De rosa 48 Piano 7
+Quarto Marino, 68446 Terni (PU)</p>
+                </div>
+                <div class="address-more">
+
+                    <p>+1470947423952</p>
+                    <p>Email:<a href="#"> messina.prisca@costantini.it</a></p>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+</div>
+<!---->
+<!---->
+<div class="footer" style="flex: 0 0 auto;">
+	<div class="footer-middle">
+		<div class="container">
+
+			<div class="footer-middle-in">
+
+				<ul>
+					<li><a href="terms.html">Termini e condizioni</a></li>
+					<li><a href="policy.html">Politica sulla privacy</a></li>
+				</ul>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<p class="footer-class"> Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+		All rights reserved
+	</p>
+
+</div>
+<div class='cookie-banner'>
+	<p>
+		Il sito utilizza i cookie. Essi consentono di riconoscere l'utente e di ottenere informazioni sulle tue esperienze.Continuando la navigazione nel sito, sono d'accordo con l'utilizzo dei cookie il proprietario del sito in conformità con  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+	</p>
+	<button class='close-cookie'>&times;</button>
+</div>
+
+<script>
+	window.onload = function () {
+		$('.close-cookie').click(function () {
+			$('.cookie-banner').fadeOut();
+		})
+	}
+</script>
+<script>
+	let elems = document.querySelectorAll('.server-name');
+	elems.forEach((elem) => {
+		elem.innerHTML = window.location.hostname
+	})
+</script>
+</body>
+</html>
